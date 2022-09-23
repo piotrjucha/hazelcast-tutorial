@@ -1,0 +1,89 @@
+{
+	"info": {
+		"_postman_id": "14e6cfd6-89cc-4681-8f7b-d3f5785a8572",
+		"name": "HazelcastTutorial",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1123501"
+	},
+	"item": [
+		{
+			"name": "Get User",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/v1/users/123457124",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"users",
+						"123457124"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add User",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"name\": \"Andrej\",\r\n\t\"surname\": \"Wars\",\r\n\t\"pesel\": \"123457124\",\r\n\t\"allergens\": [\r\n\t\t\"ACARIZAX\",\r\n\t\t\"ACATAR\",\r\n\t\t\"ACATARICK\",\r\n\t\t\"ADABLIX\",\r\n\t\t\"AERINAZE\",\r\n\t\t\"AERIUS\",\r\n\t\t\"AFRIN\",\r\n\t\t\"AHIST\",\r\n\t\t\"AIRATHON\",\r\n\t\t\"ALCETYR\",\r\n\t\t\"ALERDES\",\r\n\t\t\"ALERGO_TEVA\",\r\n\t\t\"ALERIC\",\r\n\t\t\"ALERMED\",\r\n\t\t\"ALERO\",\r\n\t\t\"ALERPALUX\",\r\n\t\t\"ALERPROF\",\r\n\t\t\"ALERTON\",\r\n\t\t\"ALERZINA\",\r\n\t\t\"ALLEFIN\",\r\n\t\t\"ALLEGRA\",\r\n\t\t\"ALLEMAX\",\r\n\t\t\"ALLEOPTICAL\",\r\n\t\t\"ALLERGOCROM\",\r\n\t\t\"ALLERGODIL\",\r\n\t\t\"ALLERGOVIT\",\r\n\t\t\"ALLERTEC\",\r\n\t\t\"ALOMIDE\"\r\n\t]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Kiki\",\r\n    \"surname\": \"Miki\",\r\n    \"pesel\": \"123457124\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"users"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
